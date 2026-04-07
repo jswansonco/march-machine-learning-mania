@@ -32,9 +32,6 @@ from sklearn.metrics import brier_score_loss, mean_absolute_error
 
 warnings.filterwarnings("ignore")
 
-# Run from the repo directory
-os.chdir("/Users/jswanson/Documents/js-sourcecontrol/kaggle-march-madness-2026")
-
 DATA = "data/"
 TORVIK = "data/torvik/"
 MIN_SEASON = 2003

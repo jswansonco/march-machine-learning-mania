@@ -635,7 +635,7 @@ print("=" * 60)
 
 # Where Torvik is available, blend. Where not, use XGBoost alone.
 # Test different blend weights
-BLEND_WEIGHT = 0.9  # 90% XGBoost, 10% Torvik (optimized vs Pinnacle market benchmark)
+BLEND_WEIGHT = 0.9  # 90% XGBoost, 10% Torvik
 
 X["Pred"] = X.apply(
     lambda r: (BLEND_WEIGHT * r["xgb_pred"] + (1 - BLEND_WEIGHT) * r["torvik_pred"])
